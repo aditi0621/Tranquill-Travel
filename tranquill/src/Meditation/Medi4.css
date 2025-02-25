@@ -1,0 +1,100 @@
+/* Style for the container */
+.medi3-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background color */
+
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background repetition */
+  border-radius: 15px; /* Round the corners of the container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a 3D effect */
+}
+
+/* Style for the heading */
+.medi3-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style for the button */
+.medi3-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.medi3-container button:hover {
+  background-color: #0056b3;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style for program cards */
+.program-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style for program images */
+.program-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Style for program details */
+.program-details {
+  margin-top: 10px;
+}
+
+.program-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.program-location,
+.program-language,
+.program-dates,
+.program-time,
+.program-fee {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Style for register button */
+.register-button {
+  background-color: #ffa500;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #e69500;
+}

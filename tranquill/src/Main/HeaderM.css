@@ -1,0 +1,97 @@
+/* HeaderM.css */
+
+/* General header styling */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #383d55;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Brand styling */
+.brand h1 {
+  margin: 0;
+  font-size: 24px;
+  white-space: nowrap; /* Prevent line breaks */
+  color: #f6f7f8; /* Change this to your desired color */
+}
+
+.brand a {
+  text-decoration: none; /* Remove link underline */
+  color: inherit; /* Inherit color from h1 */
+}
+
+/* Flex container for navigation and sidebar */
+.nav-sidebar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation bar styling */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  margin-left: 20px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar styling */
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-left: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-sidebar-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav ul,
+  .sidebar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav ul li,
+  .sidebar ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

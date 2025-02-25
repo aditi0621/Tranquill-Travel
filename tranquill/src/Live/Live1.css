@@ -1,0 +1,52 @@
+.live1-container {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.live1-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.live1-text {
+  font-size: 2rem;
+  color: white;
+  padding: 20px;
+}
+
+.live1-prev,
+.live1-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.live1-prev {
+  left: 20px;
+}
+
+.live1-next {
+  right: 20px;
+}
+
+.live1-prev:hover,
+.live1-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

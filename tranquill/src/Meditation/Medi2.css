@@ -1,0 +1,222 @@
+/* Main container for the page */
+.medi2-container {
+  padding: 80px 20px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2e2e2e;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
+}
+
+/* Section headers with modern typography */
+.medi2-section h2 {
+  font-size: 2.8rem;
+  color: #1a237e;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #3949ab;
+  display: inline-block;
+  padding-bottom: 5px;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+/* Section text with comfortable spacing */
+.medi2-section p {
+  font-size: 1.2rem;
+  color: #424242;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Styled links */
+.medi2-section a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #1e88e5;
+  transition: all 0.3s ease-in-out;
+}
+
+.medi2-section a:hover {
+  border-bottom: 2px solid transparent;
+  color: #0d47a1;
+}
+
+/* Quote section with elegant typography */
+.medi2-quote {
+  text-align: center;
+  margin: 60px 0;
+  padding: 50px;
+  background-color: #f3e5f5;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #6a1b9a;
+  border-left: 5px solid #8e24aa;
+  border-right: 5px solid #8e24aa;
+  border-radius: 8px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
+}
+
+.medi2-quote cite {
+  display: block;
+  font-size: 1.4rem;
+  color: #4a148c;
+  margin-top: 20px;
+  font-weight: bold;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+/* Benefits section with a dynamic layout */
+.medi2-benefits {
+  background: #e3f2fd;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+.medi2-benefits h2 {
+  color: #1565c0;
+  margin-bottom: 30px;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+.medi2-benefits p {
+  color: #1b1b1b;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Benefit Cards with sleek design */
+.benefit-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.benefit-card {
+  flex: 1;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeInUp 1s ease-in-out; /* Slide-up and fade-in effect */
+  opacity: 0; /* Start hidden */
+  animation-fill-mode: forwards; /* Ensure the animation stays in final state */
+  animation-delay: 0.5s; /* Delay to stagger animations */
+}
+
+.benefit-card:nth-child(2) {
+  animation-delay: 0.7s; /* Stagger effect for the second card */
+}
+
+.benefit-card:nth-child(3) {
+  animation-delay: 0.9s; /* Stagger effect for the third card */
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: #0277bd;
+  margin-bottom: 20px;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+.benefit-card p {
+  color: #424242;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Custom Icons for benefit cards */
+.benefit-card.energy::before {
+  content: "\1F5D3"; /* Calendar icon for More Bio-Energy */
+  font-size: 2.5rem;
+  color: #ffca28;
+  margin-bottom: 15px;
+  display: block;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+.benefit-card.health::before {
+  content: "\1F489"; /* Syringe icon for Better Health */
+  font-size: 2.5rem;
+  color: #ff7043;
+  margin-bottom: 15px;
+  display: block;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+.benefit-card.mood::before {
+  content: "\1F31E"; /* Sun icon for Uplifted Mood */
+  font-size: 2.5rem;
+  color: #ffeb3b;
+  margin-bottom: 15px;
+  display: block;
+  animation: slideUp 1s ease-in-out; /* Slide-up effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefit-cards {
+    flex-direction: column;
+  }
+
+  .medi2-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .medi2-quote {
+    padding: 40px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for combined slide-up and fade-in */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

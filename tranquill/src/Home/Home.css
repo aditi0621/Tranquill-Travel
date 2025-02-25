@@ -1,0 +1,181 @@
+.home-container {
+  padding: 40px;
+  text-align: center;
+  background-image: url("D:/React Internship/project/SGP/tranquill/public/Img/HomePage.jpeg"); /* Update path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2; /* Ensure this container is above the pseudo-element */
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Increased opacity for better contrast */
+  z-index: 1; /* Keep z-index lower than the main content */
+}
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Stronger shadow */
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Enhanced shadow for clarity */
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-item {
+  background-color: rgba(255, 255, 255, 0.85); /* Increased opacity */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Join Button Styles */
+.join-section {
+  position: relative;
+  z-index: 3;
+  margin-top: 40px;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 3; /* Ensure button is above the background pseudo-element */
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.join-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 36px; /* Adjust font size for mobile */
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .join-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+}

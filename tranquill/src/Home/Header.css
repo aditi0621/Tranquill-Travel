@@ -1,0 +1,53 @@
+/* Header.css */
+
+/* Navbar container */
+.navbar {
+  background-color: #2c3e50; /* Dark background color for the navbar */
+  padding: 10px 20px; /* Vertical padding to add some space above and below the links */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between Home and other items */
+  align-items: center; /* Vertically center the items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the navbar */
+}
+
+/* Navbar list container */
+.navbar-list {
+  list-style-type: none; /* Removes the default bullet points from the list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns the list items horizontally */
+  gap: 20px; /* Adds space between the navbar items */
+}
+
+/* Navbar items for links */
+.navbar-left {
+  margin-left: 20px; /* Adds some space from the left edge */
+}
+
+.navbar-right {
+  margin-right: 20px; /* Adds some space from the right edge */
+}
+
+/* Navbar links styling */
+.navbar-item a {
+  color: #ecf0f1; /* Light text color */
+  text-decoration: none; /* Removes the underline from the links */
+  font-size: 1.2em; /* Increases the font size */
+  font-family: "Arial", sans-serif; /* Sets a clean, readable font */
+  padding: 8px 16px; /* Adds padding inside the links for clickable area */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 4px; /* Slightly rounds the corners of the link */
+}
+
+/* Hover effect for navbar links */
+.navbar-item a:hover {
+  background-color: #34495e; /* Darker background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Active link styling (optional) */
+.navbar-item a.active {
+  background-color: #1abc9c; /* Highlight the active page */
+  color: #ffffff; /* White text for the active link */
+  font-weight: bold; /* Makes the active link stand out more */
+}
