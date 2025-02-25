@@ -1,5 +1,4 @@
 # Tranquill-Travel
-# Tranquill Travel
 
 Tranquill Travel is a web application designed to help people find peace and spend time in nature. It offers online and offline meditation classes, yoga sessions, travel packages for solo travelers and families, and nature visit packages.
 
@@ -32,9 +31,6 @@ tranquill/
 │   ├── Contact/              # Contact page components
 │   ├── Home/                 # Homepage components
 │   ├── Live/                 # Nature visit package components
-│   │   ├── Live1.jsx
-│   │   ├── Live2.jsx
-│   │   ├── Live3.jsx
 │   ├── Main/                 # Main components (Header, Footer, etc.)
 │   ├── Meditation/           # Meditation programs
 │   ├── Yoga/                 # Yoga programs
@@ -52,7 +48,7 @@ tranquill/
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/tranquill-travel.git
-   cd tranquill-travel
+   cd tranquill
    ```
 2. Install dependencies:
    ```sh
@@ -67,7 +63,7 @@ tranquill/
    - Configure `php` files to match your database connection settings.
 
 ## Technologies Used
-- **Frontend**: React.js, CSS
+- **Frontend**: React.js, Html, Css, Bootstrap
 - **Backend**: PHP, MySQL
 - **Database**: MySQL
 - **HTTP Requests**: Axios
